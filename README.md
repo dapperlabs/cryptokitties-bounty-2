@@ -36,6 +36,22 @@ There are five parties in any successful Offers transaction: the bidder, the Kit
   - CFO - ability to receive fees from offer cut
   - LostAndFound – withdraws funds that have failed to be sent to other addresses
 
+### Fee structure and escrow
+
+In an effort to simplify fees in the user flow we have decided to combine every possible fee into one, which we call the “offer cut”.
+
+The offer cut is charged upfront to the bidder. We define policy on how much of this to refund to the bidder when the offer is fulfilled, cancelled, overbid, or expires.
+
+Offers are escrowed in the smart contract and contain a token id, offer cut (S), unsuccessful offer fee (flat), in addition to the total value of the offer (T) (comprised of its fees and the amount that goes to the owner).
+
+These definitions are used on this document for high-level clarity of how it works:.
+
+- T - value sent with the createOffer transaction, total offer value sent by bidder
+- S - offer cut, ranges in (0, 1), configurable
+- P - offer to the owner, amount that will be sent to the owner if the offer is successfully fulfilled. P = T / (1 + S)
+- Flat = unsuccessful compensation for expired and overbid cases, configurable by COO
+
+**What each party will receive in each case (success, cancel, expired/overbid):**
 
 Cases | Success | Cancel | Expired / Overbidden
 -- | -- | -- | --
@@ -98,7 +114,7 @@ Please help us identify bugs, vulnerabilities, and exploits in the smart contrac
 
 <img src="https://user-images.githubusercontent.com/37638382/48523613-0bdf6a00-e832-11e8-8769-5ecb9eb42536.png" width="400" />
 
-Note: Rewards are at the sole discretion of Dapper Labs. 1 point currently corresponds to 1 USD (paid in ETH). Our best bug finders will receive limited edition BugCat 2.
+**Note: Rewards are at the sole discretion of Dapper Labs. 1 point currently corresponds to 1 USD (paid in ETH). Our best bug finders will receive limited edition BugCat 2.**
 
 - Critical: up to 1000 points
 - High: up to 500 points
@@ -142,20 +158,20 @@ Dapper Labs appreciates you taking the time to participate in our program, which
 ### Dapper Labs representatives:
 
 **Judging committee:**
-- @zhangchiqing (Leo)
-- @hwrdtm (Howard)
-- @bradleymcallister97 (Bradley)
-- @flockonus (Fabiano)
-- @chrisaxiom (Chris)
-- @jordanschalm (Jordan)
-- @dete (Dieter)
+- [@zhangchiqing](https://github.com/zhangchiqing) (Leo)
+- [@hwrdtm](https://github.com/hwrdtm) (Howard)
+- [@bradleymcallister97](https://github.com/bradleymcallister97) (Bradley)
+- [@flockonus](https://github.com/flockonus) (Fabiano)
+- [@chrisaxiom](https://github.com/chrisaxiom) (Chris)
+- [@jordanschalm](https://github.com/jordanschalm) (Jordan)
+- [@dete](https://github.com/dete) (Dieter)
 
 **Community & Rules:**
-- @evankeast (Evan)
+- [@evankeast](https://github.com/evankeast) (Evan)
 
 **Final Scores:**
-- @jordankitty (Jordan)
-- @arthurcamara1 (Arthur)
+- [@jordankitty](https://github.com/jordankitty) (Jordan)
+- [@arthurcamara1](https://github.com/arthurcamara1) (Arthur)
 
 ### FAQ:
 - **How are the bounties paid out?**
