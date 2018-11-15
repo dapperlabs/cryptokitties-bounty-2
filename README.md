@@ -75,20 +75,6 @@ Sum | T | T | T
   - Segregated funds, we can only touch the offers cut
   - Freeze function stopping the contract with an escape hatch allowing users to withdraw their funds. There is no way to unfreeze the contract
 
-#### Emitted events
-- OfferCreated
-- OfferCanceled
-- OfferFulfilled
-- ExpiredOfferRemoved
-- OfferUpdated
-- BidderWithdrewFundsWhenFrozen
-- MinimumTotalValueSet
-- GlobalDurationSet
-- OfferCutSet
-- UnsuccessfulCompensationSet
-- setMinimumPriceIncrement
-- PushFundsFailed
-
 ## The Scope for the Bounty Program:
 This Program will run from November 14th through 18th (the “Program Period”). The offers contract is live on the Rinkeby test network at this address: `0x5495b9791f78ee081e5e894d2e46082b1ff2085e`
 
