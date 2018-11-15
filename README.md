@@ -47,9 +47,9 @@ Offers are escrowed in the smart contract and contain a token id, offer cut (S),
 These definitions are used on this document for high-level clarity of how it works:.
 
 - T - value sent with the createOffer transaction, total offer value sent by bidder
-- S - offer cut, ranges in (0, 1), configurable
+- S - offer cut, configurable
 - P - offer to the owner, amount that will be sent to the owner if the offer is successfully fulfilled. P = T / (1 + S)
-- Flat = unsuccessful compensation for expired and overbid cases, configurable by COO
+- flat - unsuccessful compensation for expired and overbid cases, configurable by COO
 
 **What each party will receive in each case (success, cancel, expired/overbid):**
 
@@ -58,7 +58,7 @@ Cases | Success | Cancel | Expired / Overbidden
 Owner | P | 0 | 0
 Bidder | 0 | T - S * P | T - flat
 CFO | T - P | S * P | flat
-Sum | T | T | T
+**Sum** | **T** | **T** | **T**
 
 ### Feature design goals
 - Best possible end UX for the owner
@@ -100,7 +100,9 @@ Please help us identify bugs, vulnerabilities, and exploits in the smart contrac
 
 <img src="https://user-images.githubusercontent.com/37638382/48523613-0bdf6a00-e832-11e8-8769-5ecb9eb42536.png" width="400" />
 
-**Note: Rewards are at the sole discretion of Dapper Labs. 1 point currently corresponds to 1 USD (paid in ETH). Our best bug finders will receive limited edition BugCat 2.**
+### Rewards
+
+**Note: Rewards are at the sole discretion of Dapper Labs. 1 point currently corresponds to 1 USD (paid in ETH). Our best bug finders will receive an Exclusive BugCat 2.**
 
 - Critical: up to 1000 points
 - High: up to 500 points
