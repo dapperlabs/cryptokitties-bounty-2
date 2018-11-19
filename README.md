@@ -1,7 +1,8 @@
 ![bugbounty-07](https://user-images.githubusercontent.com/37638382/48523883-fd458280-e832-11e8-982c-c93f5d72f8bc.jpg)
 
-# CryptoKitties Bug Bounty v2
+# The CryptoKitties Bug Bounty v2 is NOW CLOSED
 ## “Offers” Feature By Dapper Labs, Inc.
+## Thank you everyone for your participation. Please stay tuned for rewards!
 
 At Dapper Labs we recognize the important role security researchers play in keeping our community safe and the CryptoKittiesⓇ game enjoyable. We’re inviting members of the community to help us seek out and help resolve security vulnerabilities for an upcoming CryptoKitties smart contract via our bug bounty program described below (the “Program”).
 
